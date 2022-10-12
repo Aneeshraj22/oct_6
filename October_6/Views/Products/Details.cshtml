@@ -1,0 +1,49 @@
+﻿@model October_6.Models.Productmodel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Productmodel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Proid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Proid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Proname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Proname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Qty)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Qty)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Mfgdate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mfgdate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
